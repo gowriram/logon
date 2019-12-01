@@ -1,7 +1,7 @@
 
 /**
 	* Node.js Login Rambabu
-	* More Info : https://github.com/braitsch/node-logi
+	* More Info : https://github.com/braitsch/node-log
 	
 **/
 
