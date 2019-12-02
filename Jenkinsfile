@@ -1,20 +1,20 @@
-Pipeline{
-   Stages
+pipeline{
+   stages
     {
 
-       Stage('Checkout-GIT') 
+       stage('Checkout-GIT') 
      {
                steps{
 checkout scm
                        } 
      }
-       Stage('Node-Build') 
+       stage('Node-Build') 
      {
                steps{
 echo "hello"
                        } 
      } 
-     Stage('S3-Deploy' ) 
+     stage('S3-Deploy' ) 
      {
                steps{
                        } 
