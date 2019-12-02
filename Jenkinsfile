@@ -5,7 +5,7 @@ Pipeline{
        Stage('Checkout-GIT') 
      {
                steps{
-Checkout scm
+checkout scm
                        } 
      }
        Stage('Node-Build') 
