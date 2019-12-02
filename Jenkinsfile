@@ -13,10 +13,14 @@ checkout scm
        stage('Node-Build') 
      {
                steps{
-echo "hello"
+nodejs('Newnode') {
+    // some block
 sh 'npm install' 
 sh 'npm ls'
 sh 'npm audit fix'
+} 
+echo "hello"
+
                        } 
      } 
      stage('S3-Deploy' ) 
