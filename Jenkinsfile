@@ -11,7 +11,7 @@ Checkout scm
        Stage('Node-Build') 
      {
                steps{
-Echo "hello" 
+echo "hello"
                        } 
      } 
      Stage('S3-Deploy' ) 
