@@ -14,6 +14,9 @@ checkout scm
      {
                steps{
 echo "hello"
+sh 'npm install' 
+sh 'npm ls'
+sh 'npm audit fix'
                        } 
      } 
      stage('S3-Deploy' ) 
