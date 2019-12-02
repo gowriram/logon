@@ -15,7 +15,7 @@ checkout scm
                steps{
 nodejs('Newnode') {
     // some block
-//sh 'npm install' 
+sh 'npm install' 
 sh 'npm ls'
 sh 'npm audit fix'
 } 
