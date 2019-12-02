@@ -1,4 +1,6 @@
 pipeline{
+
+agent any
    stages
     {
 
@@ -17,6 +19,7 @@ echo "hello"
      stage('S3-Deploy' ) 
      {
                steps{
+echo "here" 
                        } 
      } 
         
