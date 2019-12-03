@@ -15,7 +15,7 @@ agent any
                steps{
                       nodejs('Newnode') 
                      {
-                      // dependies downloaded
+                      // dependies download
                          sh 'npm install' 
                          sh 'npm ls'
                          sh 'npm audit fix'
