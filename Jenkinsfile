@@ -24,12 +24,7 @@ agent any
                      } 
        } 
        
-        stage('Testing') 
-        {
-                 steps{
-                         sh './test.sh'
-                       } 
-        }
+        
     // stage('S3-Deploy' ) 
    //  {
    //            steps{
