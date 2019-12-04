@@ -18,12 +18,18 @@ agent any
                       // dependies downloads
                          sh 'npm install' 
                          sh 'npm ls'
-                         sh 'npm audit fix'
-                         echo "nodejs build finish and issues resolved" 
+                      
                       } 
                      } 
        } 
        
+         stage('Fixing Issues') 
+        {
+                 steps{
+                        sh 'npm audit fix'
+                         echo "nodejs build finish and issues resolved" 
+                       } 
+        }
         
    stage('S3-Deploy' ) 
     {
